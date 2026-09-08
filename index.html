@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Moza Racing League</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #08090b;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 22px 20px;
+      border-bottom: 1px solid #202228;
+      position: sticky;
+      top: 0;
+      background: rgba(8, 9, 11, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .logo span {
+      color: #e10600;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px 45px;
+    }
+
+    .tag {
+      color: #e10600;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 11vw, 78px);
+      line-height: 0.95;
+      letter-spacing: -4px;
+      max-width: 750px;
+    }
+
+    .hero p {
+      color: #999;
+      margin-top: 22px;
+      max-width: 600px;
+      font-size: 16px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 19px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .primary {
+      background: #e10600;
+      color: white;
+    }
+
+    .secondary {
+      border: 1px solid #333;
+      color: white;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 20px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      background: #101216;
+      border: 1px solid #202228;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .muted {
+      color: #888;
+      font-size: 14px;
+    }
+
+    .race-card {
+      border-left: 3px solid #e10600;
+    }
+
+    .round {
+      color: #e10600;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .driver {
+      display: flex;
+      justify-content: space-between;
+      padding: 13px 0;
+      border-bottom: 1px solid #24262b;
+    }
+
+    .driver:last-child {
+      border-bottom: none;
+    }
+
+    .driver-number {
+      color: #777;
+      margin-right: 10px;
+    }
+
+    .points {
+      font-weight: bold;
+    }
+
+    .discord {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .discord h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 12px;
+      padding: 35px 20px;
+      border-top: 1px solid #202228;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        display: none;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">m<span>r</span>l</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#standings">Standings</a>
+        <a href="#calendar">Calendar</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="home">
+
+    <div class="hero">
+      <div class="tag">F1 26 • COMPETITIVE RACING</div>
+
+      <h1>MOZA<br>RACING<br>LEAGUE</h1>
+
+      <p>
+        Welcome to MRL — competitive F1 racing, clean battles
+        and a community built around racing.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="YOUR-DISCORD-LINK">
+          Join Discord
+        </a>
+
+        <a class="button secondary" href="#standings">
+          View Standings
+        </a>
+      </div>
+    </div>
+
+
+    <section>
+      <h2 class="section-title">Next Race</h2>
+
+      <div class="card race-card">
+        <div class="round">ROUND 01</div>
+        <h3>Belgian Grand Prix</h3>
+        <p class="muted">Date & time TBA</p>
+      </div>
+    </section>
+
+
+    <section id="standings">
+      <h2 class="section-title">Championship</h2>
+
+      <div class="card">
+
+        <div class="driver">
+          <div>
+            <span class="driver-number">01</span>
+            Driver 1
+          </div>
+          <div class="points">0 PTS</div>
+        </div>
+
+        <div class="driver">
+          <div>
+            <span class="driver-number">02</span>
+            Driver 2
+          </div>
+          <div class="points">0 PTS</div>
+        </div>
+
+        <div class="driver">
+          <div>
+            <span class="driver-number">03</span>
+            Driver 3
+          </div>
+          <div class="points">0 PTS</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="calendar">
+      <h2 class="section-title">Race Calendar</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <div class="round">01</div>
+          <h3>Belgian GP</h3>
+          <p class="muted">TBA</p>
+        </div>
+
+        <div class="card">
+          <div class="round">02</div>
+          <h3>Race 2</h3>
+          <p class="muted">TBA</p>
+        </div>
+
+        <div class="card">
+          <div class="round">03</div>
+          <h3>Race 3</h3>
+          <p class="muted">TBA</p>
+        </div>
+
+        <div class="card">
+          <div class="round">04</div>
+          <h3>Race 4</h3>
+          <p class="muted">TBA</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <h2 class="section-title">Latest Result</h2>
+
+      <div class="card">
+        <h3>Season opener</h3>
+        <p class="muted">
+          Results will appear here after the first race.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="discord">
+      <h2>Ready to race?</h2>
+
+      <p class="muted">
+        Join the Moza Racing League community on Discord.
+      </p>
+
+      <div class="buttons" style="justify-content:center;">
+        <a class="button primary" href="YOUR-DISCORD-LINK">
+          Join MRL
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    © 2026 Moza Racing League • MRL
+  </footer>
+
+</body>
+</html>
