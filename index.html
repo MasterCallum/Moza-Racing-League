@@ -223,6 +223,168 @@
 
 .race:last-child {
   border-bottom: none;
+} /* ===== MRL FINAL POLISH ===== */
+
+body {
+  background: #08090b;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: rgba(8, 9, 11, 0.96);
+  border-bottom: 1px solid #222;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 20px;
+}
+
+.logo-image {
+  width: 85px;
+  filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.25));
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #8B5CF6;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+.section-title {
+  font-size: 26px;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+.card {
+  background: #0d0e12;
+  border: 1px solid #24242b;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.race-card {
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.08);
+}
+
+.round {
+  color: #8B5CF6;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.race-card h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.muted {
+  color: #888;
+}
+
+.driver {
+  padding: 17px 4px;
+  border-bottom: 1px solid #202126;
+}
+
+.driver:last-child {
+  border-bottom: none;
+}
+
+.driver-number {
+  color: #8B5CF6;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.points {
+  font-weight: bold;
+  color: #fff;
+}
+
+.race {
+  padding: 17px 4px;
+  border-bottom: 1px solid #202126;
+  font-size: 18px;
+}
+
+.race:last-child {
+  border-bottom: none;
+}
+
+.button {
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button.primary {
+  background: #8B5CF6;
+  border: 1px solid #8B5CF6;
+  color: white;
+}
+
+.button.primary:hover {
+  background: #7c3aed;
+}
+
+.button.secondary {
+  background: #111217;
+  border: 1px solid #30303a;
+  color: white;
+}
+
+.button.secondary:hover {
+  border-color: #8B5CF6;
+  color: #8B5CF6;
+}
+
+.buttons {
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+
+  section {
+    padding: 28px 16px;
+  }
+
+  .section-title {
+    font-size: 23px;
+  }
+
+  .race-card h3 {
+    font-size: 26px;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+
+  .driver {
+    padding: 15px 2px;
+  }
+
+  .race {
+    padding: 16px 2px;
+  }
+
 } </style> 
 </head>
 
