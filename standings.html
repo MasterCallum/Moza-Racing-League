@@ -46,19 +46,28 @@ p {
   border-radius: 8px;
 }
 .driver {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100%;
+  box-sizing: border-box;
   padding: 16px 0;
   border-bottom: 1px solid #333;
 }
 
+.driver:last-child {
+  border-bottom: none;
+}
+
 .driver-number {
-  margin-right: 12px;
+  display: inline-block;
+  width: 35px;
   opacity: 0.6;
 }
 
 .points {
+  margin-left: auto;
   font-weight: bold;
 }
 </style>
