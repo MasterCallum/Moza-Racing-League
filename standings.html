@@ -70,7 +70,94 @@ p {
   margin-left: auto;
   font-weight: bold;
 }
-</style>
+/* MRL STYLE UPGRADE */
+
+body {
+  background: #050505;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #080808;
+  border-bottom: 1px solid #222;
+  padding: 18px 25px;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 55px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 34px;
+  margin: 0 0 22px 0;
+  letter-spacing: -1px;
+}
+
+.card {
+  background: #0c0c0c;
+  border: 1px solid #252525;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.driver {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 19px 22px;
+  border-bottom: 1px solid #222;
+}
+
+.driver:last-child {
+  border-bottom: none;
+}
+
+.driver-number {
+  display: inline-block;
+  width: 38px;
+  color: #777;
+  font-size: 14px;
+}
+
+.points {
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.driver:first-child {
+  background: #111;
+}
+
+.driver:first-child .driver-number {
+  color: #fff;
+  font-weight: bold;
+}
+
+.driver:first-child .points {
+  font-size: 16px;
+} </style>
 </head>
 
 <body>
